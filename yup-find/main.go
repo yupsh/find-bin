@@ -6,7 +6,7 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	yup "github.com/gloo-foo/framework"
+	gloo "github.com/gloo-foo/framework"
 	. "github.com/yupsh/find"
 )
 
@@ -85,5 +85,5 @@ func action(c *cli.Context) error {
 
 	// Create and execute the find command
 	cmd := Find(params...)
-	return yup.Run(cmd)
+	return gloo.Run(cmd)
 }
